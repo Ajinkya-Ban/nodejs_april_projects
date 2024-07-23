@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lusitana", serif;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.box
+{
+    width: 680px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+    margin: 100px auto;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.heading
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.b1
+{
+    display: flex;
+    width: 100%;
+}
+.photo
+{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    
+}
+.photo img
+{
+    width: 100%;
+}
+.contents
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+label
+{
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+input[type=text]
+{
+    margin-bottom: 6px;  
+    font-size: 14px;
+    outline: 0;
+    border: 1px solid lightgray;
+}
+#op
+{
+    margin-bottom: 5px;
+    color: black;
+    font-size: 14px;
+    width: 160px;
+    border: 1px solid lightgray;
+}
+input[type=button]
+{
+    background-color: royalblue;
+    color: white;
+    padding: 5px 10px;
+    outline: 0;
+    border: none;
+    font-size: 14px;
+   
+    cursor: pointer;
+}
+input[type=button]:hover{
+
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

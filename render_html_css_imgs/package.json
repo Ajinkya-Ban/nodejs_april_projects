@@ -1,0 +1,11 @@
+{
+  "name": "render_html_css_imgs",
+  "version": "1.0.0",
+  "description": "we create external css and images folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "techhub",
+  "license": "ISC"
+}
