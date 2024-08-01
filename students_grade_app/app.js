@@ -94,8 +94,7 @@ const server = http.createServer((req,res)=>{
     const parsedUrl = url.parse(req.url,true);
     const pathname = parsedUrl.pathname;
     const queryObject = parsedUrl.query;
-    const productId = queryObject.id;
-        
+    const productId = queryObject.id;    
     if(pathname === '/productlist')
     {
         if(!productId)
@@ -141,7 +140,7 @@ const server = http.createServer((req,res)=>{
                     res.end("Product not found");
                     return;
                 }
-
+                
                 let renderedHtml = htmlTemplate.replace('{{%productImage%}}', product.productImage)
                                                .replace('{{%name%}}', product.name)
                                                .replace('{{%color%}}', product.color)
@@ -158,7 +157,6 @@ const server = http.createServer((req,res)=>{
 
             });
         });
-
     }
 });
 
