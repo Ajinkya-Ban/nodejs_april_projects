@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+</head>
+<body>
+    <h1>Students</h1>
+    <div id="students"></div>
+
+    <script>
+        fetch('http://localhost:7070/get-students')
+            .then(response => response.json())
+            .then(data => {
+                const studentsDiv = document.getElementById('students');
+                data.forEach(student => {
+                    const studentDiv = document.createElement('div');
+                    studentDiv.innerHTML = `
+                        <h2>${student.sname}</h2>
+                        <p>City: ${student.city}</p>
+                        <img src="${student.photo}" alt="Photo of ${student.sname}" width="100" height="100">
+                    `;
+                    studentsDiv.appendChild(studentDiv);
+                });
+            })
+            .catch(error => console.error('Error fetching students:', error));
+    </script>
+</body>
+</html>
